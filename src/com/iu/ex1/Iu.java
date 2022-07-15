@@ -3,6 +3,8 @@ public class Iu {
 
 		private String name;//null
 		private int age;//0
+		//실험
+		private String test;
 		
 		private static Iu iu = null;			
 	
