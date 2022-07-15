@@ -1,26 +1,31 @@
 package com.iu.main;
+import com.iu.terran.Marine;
+import com.iu.terran.Scv;
+import com.iu.zerg.Hydra;
 
-import com.iu.animal.Cat;
-import com.iu.animal.Human;
-import com.iu.animal.Zoo;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//		Cat cat = new Cat();
-//	 cat.sound();
+		Marine m1 = new Marine();
+		Scv s1 = new Scv();
+		Hydra h1 = new Hydra();
+	
+		m1.setHp(100);
+		m1.setColor("화이트");//매개변수 스티링 리턴타입은 보이드
+		m1.setName("마린");
+		m1.info();
+		m1.move();
 		
-		Human human = new Human();
-//		human.age = 
-		human.setAge(222);
-		human.info();
-		//---------------------------------------------
-		System.out.println(Zoo.title);
-		Zoo.info();
+		s1.setHp(80);
+		s1.setColor("블랙");
+		s1.setName("Scv");
 		
-		Zoo zoo = new Zoo();
+		h1.setHp(150);
+		h1.setColor("핑크");
+		h1.setName("히드라");
+		
 	
 	}
-
 }
+
