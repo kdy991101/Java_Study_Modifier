@@ -22,9 +22,10 @@ public class Client {
 //	}
 	
 	//밑에 방식이 오버로딩
-	public void buy(Tv tv) {
-		this.money = this.money-tv.getPrice(); //- 물건의 가격
-		this.point = this.point+tv.getPoint();// + 물건의 포인트
+	//부모의 메서드를 넣어줌
+	public void buy(Common common) {
+		this.money = this.money-common.getPrice(); //- 물건의 가격
+		this.point = this.point+common.getPoint();// + 물건의 포인트
 		System.out.println("잔액 : " + this.money);
 		System.out.println("포인트 : " + this.point);
 	}

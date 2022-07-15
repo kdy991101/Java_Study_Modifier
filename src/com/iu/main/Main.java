@@ -19,7 +19,7 @@ public class Main {
 			tv.info();
 			
 			Client client = new Client();
-			client.buy(tv);
+			client.buy(cp);
 			
 	}
 }
