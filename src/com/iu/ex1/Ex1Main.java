@@ -5,6 +5,7 @@ public class Ex1Main {
 	public static void main(String[] args) {
 		//싱글톤 : 한개만 있다~
 		//디자인 패턴
+		//나중에 MVC2라는 디자인 패턴도 있음
 		
 		// TODO Auto-generated method stub
 		//9_13 1.
