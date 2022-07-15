@@ -1,8 +1,9 @@
 package com.iu.terran;
 
+import com.iu.unit.Attacker;
 import com.iu.unit.Unit;
 
-public class Marine extends Unit {
+public class Marine extends Unit implements Attacker{
 	 
 	//오버라이딩
 	public void move() 
@@ -10,14 +11,18 @@ public class Marine extends Unit {
 		super.info();//쓸일이 많이 있지는 않음
 		System.out.println("뛰어다님");
 	}
-	public void attack() 
-	{
-		System.out.println("총으로 공격");
-	}
 	public void info()
 	{//이런식으로 선언하는게 오버 라이딩
 		System.out.println("Marine Info");
 		
+	}
+	
+	public void attack() {
+		
+	}
+	private void shoot() 
+	{
+		System.out.println("총으로 공격");
 	}
 	
 	private String weapon;

@@ -8,6 +8,9 @@ public abstract class Unit {
 	String color;
 	String name;
 	
+	public Unit() {
+		
+	}
 	public Unit(int hp) {//생성자는 상속하지 않음
 		System.out.println("Super 생성자");
 		this.hp = hp;
