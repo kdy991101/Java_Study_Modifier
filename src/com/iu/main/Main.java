@@ -8,6 +8,11 @@ import com.iu.utill.CollectionStack;
 
 public class Main {
 		public static void main(String[] args) {
+			String name = "test";
+			char ch = name.charAt(1);
+//			name에 있는 charAt
+			System.out.println(ch);
+			
 			Scanner sc = new Scanner(System.in);
 			boolean isContinue = true;
 //			iscontinue = 계속하다.
@@ -30,7 +35,7 @@ public class Main {
 		 while(isContinue)
 		 {
 			 System.out.println("");
-			 int selectTool - sc.nextInt();
+			 int selectTool = sc.nextInt();
 			 int select = 0;
 			 
 			 if(select == 1)
